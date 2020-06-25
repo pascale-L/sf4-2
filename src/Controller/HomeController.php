@@ -22,7 +22,7 @@ class HomeController extends AbstractController
             'createdAt' => new \DateTime('-1 month')
            ]);*/
 
-           // On utilise nptre propre méthode pour récupérer les nouveautés
+           // On utilise notre propre méthode pour récupérer les nouveautés
            $result = $repository->findNews();
         
         
