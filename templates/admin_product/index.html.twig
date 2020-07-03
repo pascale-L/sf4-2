@@ -27,7 +27,14 @@ Liste des produits
                     <th>Description</th>
                     <th>Prix</th>
                     <th>Création</th>
+                    <th>Catégorie</th>
                     <th></th>
+                    
+                    
+                    
+                    
+                    
+                    
                 </tr>
             </thead>
             <tbody>
@@ -53,6 +60,8 @@ Liste des produits
                             <td class="has-text-right">
                               {{ product.priceFloat|number_format(2, '.', ' ') }} €</td>
                             <td>{{ product.createdAt|date('d/m/Y') }}</td>
+                           {#} <td>   {{ product.category|}}  </td>#}
+                
                             <td>
                                 <div class="buttons">
                                         <a href="{{ path('admin_product_edit', {id: product.id}) }}" class="button is-success">Modifier</a>

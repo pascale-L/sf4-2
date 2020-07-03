@@ -53,6 +53,7 @@ class ProductFormType extends AbstractType
 
         
     }
+          
 
     public function configureOptions(OptionsResolver $resolver)
     {
@@ -60,4 +61,10 @@ class ProductFormType extends AbstractType
             'data_class' => Product::class,
         ]);
     }
+   
+    /* public function __toString()
+    {
+        return (string) $this->getCategory();
+    }
+    */
 }

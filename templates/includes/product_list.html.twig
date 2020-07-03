@@ -17,6 +17,8 @@
                                         <small>{{ product.createdAt|date('d/m/Y') }}</small>
                                         <br>
                                         {{ product.description|slice(0, 50) }}
+                                        <br>
+                                       {#} <a href="#"> {{ product.category }}</a>#}
                                     </p>
                                     <div class="tags has-addons">
                                         <span class="tag">{{ product.priceFloat|number_format(2, '.', ' ') }}</span>
